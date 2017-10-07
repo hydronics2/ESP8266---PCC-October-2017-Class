@@ -1,0 +1,178 @@
+body {
+  background-color: #696969;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  width: 1080px;
+  text-align: center;
+}
+
+#frame {
+  width: 1080px;
+  height: auto;
+  border: 5px solid #B8B8B8;
+  background-color: #696969;
+}
+
+#color {
+  margin-right: 10px;
+  font-size: 50px;
+}
+
+#sectionOne {
+  width: 860px;
+}
+
+#resultCur {
+  left: 50px;
+  width: 350px;
+  height: 100px;
+  background-color: #FF0000;
+  position: absolute;
+}
+
+#resultPre {
+  left: 400px;
+  width: 350px;
+  height: 100px;
+  background-color: #FF0000;
+  position: absolute;
+}
+
+#resultCat {
+  width: 350px;
+  height: 100px;
+  margin: 5px 0px 10px 5px;
+  /*border: 5px solid #B8B8B8;*/
+}
+
+#shade {
+  width: 150px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#colerName {
+  font-size: 1px;
+  color: white;
+  width: 1px;
+}
+
+#curColerName {
+  font-size: 1px;
+  color: #FFFFFF;
+}
+
+#output {
+  margin: 10px 220px 0px 10px;
+}
+
+#idtt {
+  font-size: 40px;
+}
+/*#resultHex,
+#resultHexTwo {
+  font-size: 15px;
+  text-align: center;
+  width: 70px;
+  margin: 0px;
+}*/
+
+.resultRGB {
+  font-size: 50px;
+  text-align: center;
+  width: 150px;
+}
+
+.title {
+  color: white;
+}
+
+.color {
+  margin: 70px 15px 100px 25px;
+}
+
+.color:focus,
+.resultRGB:focus,
+#resultHex:focus,
+#resultHexTwo:focus {
+  outline: 0;
+  box-shadow: 0px 0px 10px rgba(000, 000, 000, 0.8);
+}
+/*Hue backdround Gradient*/
+
+#hue {
+  background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #00FFFF, #0000FF, #FF00FF, #FF0000);
+}
+/*Saturation backdround Gradient*/
+
+#saturation {
+  background: linear-gradient(to right, #7F7F7F, #FF0000);
+}
+/*Lightness backdround Gradient*/
+
+#lightness {
+  background: linear-gradient(to right, #000000, #FF0000, #FFFFFF);
+}
+
+#instructions {
+  font-size: 22px;
+  color: white;
+}
+
+#instr {
+  font-size: 15px;
+  color: white;
+}
+
+#instr td {
+  height: 25px;
+}
+
+#key {
+  width: 10px;
+  text-align: right;
+}
+
+#work {
+  width: 300px;
+  text-align: left;
+}
+/* Range look determined here */
+
+input[type='range'] {
+  -webkit-appearance: none;
+  border: 5px solid #B8B8B8;
+  height: 100px;
+  width: 700px;
+  vertical-align: middle;
+}
+
+input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  border-radius: 15px;
+  box-shadow: inset 0 0 25px #333;
+  height: 100px;
+  width: 700px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgba(000, 000, 000, 0);
+  box-shadow: inset 0 0 2px rgba(000, 000, 000, 0.5);
+  border: 10px solid #FFFFFF;
+  height: 100px;
+  width: 20px;
+}
+
+input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  border-radius: 20px;
+  background-color: rgba(000, 000, 000, 0);
+  box-shadow: inset 0 0 10px rgba(000, 000, 000, 0.5);
+  border: 1px solid #999;
+  height: 100px;
+  width: 20px;
+}
