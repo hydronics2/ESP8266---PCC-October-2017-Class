@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<style>
+.a{font-family: Helvetica; background-color:#555555; text-decoration:none; border:none; color:black; padding:50px200px; text-align:center; display:inline-block; font-size:100px; margin:4px2px; cursor:pointer; border-radius:16px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.button1 {background-color:#ffA200;}   /*rgb(255,162,0)*/
+.button2 {background-color:#ffE666;}  /*rgb(255,230,102)*/
+.button3 {background-color:#ffff00;}  /*rgb(255,255,0)*/
+.button4 {background-color:#e7e7e7;}
+.button5 {background-color:#ffffff;}
+.button6 {background-color:#B0E0E6;}
+h1{font-family: Helvetica; font-size:100px;}
+h2{font-family: Helvetica; font-size:80px;}
+h3{font-family: Helvetica; font-size:60px;}
+</style>
+
+
+
+
+  <meta charset="UTF-8">
+  <title>OMSI Featured Stairwell</title>
+
+
+
+      <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- Google Font -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+<script src="jquery.min.js"></script>
+<!-- Main Body -->
+
+<body>
+  <h1>
+    <span id="color">
+      <span style="color:#FFFFFF">PCC Color Picker</span>
+
+    </span>
+    <!-- <span id="picker">
+      <span style="color:#FF0000">P</span>
+      <span style="color:#FFFF00">I</span>
+      <span style="color:#00FF00">C</span>
+      <span style="color:#00FFFF">K</span>
+      <span style="color:#0000FF">E</span>
+      <span style="color:#FF00FF">R</span>
+    </span> -->
+
+  </h1>
+  <table id="frame">
+    <tr>
+      <td id="sectionOne">
+        <input autofocus class="color" id="hue" type="range" min="0" max="359" value="0"><span class="title" id="huedeg">0&deg</span>
+        <br>
+        <input class="color" id="saturation" type="range" min="0" max="100" value="100"><span class="title" id="satper">100&#37</span>
+        <br>
+        <input class="color" id="lightness" type="range" min="0" max="100" value="50"><span class="title" id="ligper">50&#37</span>
+        <br>
+        <div id="resultCat">
+          <div id="resultCur" title="#FF0000" onclick="activate(this);" class="0 100 50"></div>
+          <div id="resultPre" title="#FF0000" onclick="activate(this);" class="0 100 50"></div>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <table id="output">
+                <tr>
+                  <td id="idtt"><span class="title">R:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultR" class="resultRGB" type="text" value="255" readonly>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="idtt"><span class="title">G:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultG" class="resultRGB" type="text" value="0" readonly>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="idtt"><span class="title">B:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultB" class="resultRGB" type="text" value="0" readonly>
+                  </td>
+                </tr>
+                <!-- <tr>
+                  <td id="idtt"><span class="title">Hex: #</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultHex" type="text" value="FF0000" readonly>
+                  </td>
+                </tr> -->
+              </table>
+            </td>
+
+            <td>
+              <table id="output">
+                <tr>
+                  <td id="idtt"><span class="title">R:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultRTwo" class="resultRGB" type="text" value="255" readonly>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="idtt"><span class="title">G:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultGTwo" class="resultRGB" type="text" value="0" readonly>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="idtt"><span class="title">B:</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultBTwo" class="resultRGB" type="text" value="0" readonly>
+                  </td>
+                </tr>
+                <!-- <tr>
+                  <td id="idtt"><span class="title">Hex: #</span></td>
+                  <td id="val">
+                    <input spellcheck="false" id="resultHexTwo" type="text" value="FF0000" readonly>
+                  </td>
+                </tr> -->
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td id="sectionTwo">
+        <table id="shades"></table>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <!-- <div id="instructions">Shortcut Keys</div>
+  <table id="instr">
+    <tr>
+      <td id="key">1 : </td>
+      <td id="work">Select Hue Bar</td>
+    </tr>
+    <tr>
+      <td id="key">2 : </td>
+      <td id="work">Select Saturation Bar</td>
+    </tr>
+    <tr>
+      <td id="key">3 : </td>
+      <td id="work">Select Brightness Bar</td>
+    </tr>
+    <tr>
+      <td id="key">Q : </td>
+      <td id="work">Switch to First Color Slot</td>
+    </tr>
+    <tr>
+      <td id="key">W : </td>
+      <td id="work">Switch to Second Color Slot</td>
+    </tr>
+  </table> -->
+
+  <h2>Preset Colors:</h2>
+  <h3>Goldz........</h3>
+  <button class="a button1" onclick="gold1()"> Gold1 </button><br><br>
+  <button class="a button2" onclick="gold2()"> Gold2 </button><br><br>
+  <button class="a button3" onclick="gold3()"> Gold3 </button><br><br>
+
+  <h2>Patterns:</h2>";
+  <button class="a button6" onclick="pattern1()"> Next Pattern </button><br><br>
+
+  <h2>Intensity:</h2>
+  <button class="a button4" onclick="setPower0()"> OFF </button><br><br>
+  <button class="a button4" onclick="setPower20()"> 20% </button><br><br>
+  <button class="a button4" onclick="setPower40()"> 40% </button><br><br>
+  <button class="a button4" onclick="setPower60()"> 60% </button><br><br>
+  <button class="a button4" onclick="setPower80()"> 80% </button><br><br>
+  <button class="a button4" onclick="setPower99()"> 100% </button><br><br>
+
+  <h2>Speed (FPS):</h2>
+  <!-- 1 x 12 = 12
+  2 x 12 = 24 -->
+  <button class="a button4" onclick="setFps1()"> 12 FPS </button><br><br>
+  <button class="a button4" onclick="setFps2()"> 24 FPS </button><br><br>
+  <button class="a button4" onclick="setFps3()"> 36 FPS </button><br><br>
+  <button class="a button4" onclick="setFps4()"> 48 FPS </button><br><br>
+  <button class="a button4" onclick="setFps5()"> 60 FPS </button><br><br>
+  <button class="a button4" onclick="setFps6()"> 72 FPS </button><br><br>
+  <button class="a button4" onclick="setFps7()"> 84 FPS </button><br><br>
+  <button class="a button4" onclick="setFps8()"> 96 FPS </button><br><br>
+  <button class="a button4" onclick="setFps9()"> 108 FPS </button><br><br>
+
+
+</body>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
